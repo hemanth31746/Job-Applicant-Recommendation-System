@@ -3,13 +3,13 @@
 
 An AI-powered recommendation engine that matches applicants with suitable jobs using skill embeddings, cosine similarity, and experience-based scoring.
 
-📌 Problem Statement
+Problem Statement
 
 Recruiters spend excessive time manually screening resumes, which is time-consuming, inconsistent, and error-prone.
 This leads to missed talent, delays in hiring, and poor candidate experience.
 Our system solves this by automating job–applicant matching using NLP and machine learning.
 
-🎯 Objectives
+Objectives
 
 Automate job–applicant matching using embeddings.
 
@@ -23,7 +23,7 @@ Provide explainable feedback (matched skills, missing skills, experience gaps).
 
 Deploy as a FastAPI service for easy integration.
 
-⚙️ Methodology
+⚙ Methodology
 Match Score Calculation
 
 Skill Similarity (70%)
@@ -52,7 +52,7 @@ Overqualified experience → small penalty (to avoid poor fit).
 
 Extra unrelated skills → ignored (no bonus).
 
-🔄 System Flows
+System Flows
 
 Flow 5: Model Building at Startup
 
@@ -70,7 +70,7 @@ Flow 3: Applicant vs Job
 
 Given applicant & job → calculate detailed compatibility score → return explanation (skills matched, missing, experience gap).
 
-📤 Example JSON Output
+Example JSON Output
 {
   "applicant_id": "A123",
   "recommendations": [
@@ -87,7 +87,7 @@ Given applicant & job → calculate detailed compatibility score → return expl
   ]
 }
 
-🚀 Setup & Run
+ Setup & Run
 1. Clone the repository
 git clone https://github.com/YOUR-USERNAME/applicantRecommendation.git
 cd applicantRecommendation
@@ -112,7 +112,7 @@ python main.py
 
 Server runs at: http://0.0.0.0:8080
 
-📬 API Endpoints
+ API Endpoints
 
 GET /applicant/{id}/jobs → Get recommended jobs for an applicant
 
